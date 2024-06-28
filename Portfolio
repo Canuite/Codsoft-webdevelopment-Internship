@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>canuite_portfolio</title>
+  </head>
+  <body>
+  <header>
+      <h1>CANUITE VIJAY</h1>
+<p>Web Developer | Content Creator</p>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Page</a></li>
+          <li><a href="#">services</a></li>
+          <li><a href="#">About</a></li>
+	  <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+   <section id="about">
+      <img src="3.jpg" alt="canuite vijay" />
+    </section>
+
+    <section id="about1">
+      <h2>Crafting innovative web solutions with expertise in front-end design, back-end development, and seamless user experiences.
+      </h2>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <img src="s.png" alt="Project 1" />
+        <h3>Project 1</h3>
+        <p>Explore a dynamic website I've crafted, showcasing innovative design and seamless functionality tailored to enhance user experience across various platforms</p>
+      </div>
+    </section>
+    <section id="resume">
+      <h2>Resume</h2>
+      <p><a href="canuite_resume.pdf" download> Download Resume (PDF)</a></p>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: canuitevijay1212@gmail.com</p>
+      <p>Website: canuite_blog.com</p>
+      <p>Phone: 8753483224</p>
+    </section>
+    <footer>
+<div class="social-links">
+    <a href="https://www.facebook.com/" target="_blank">
+        <img src="f.png" alt="Facebook Logo">
+    </a>
+    <a href="https://in.linkedin.com/" target="_blank">
+        <img src="l.png" alt="LinkedIn Logo">
+    </a>
+    <a href="https://www.blogger.com/" target="_blank">
+        <img src="b.jpeg" alt="Blog Logo">
+    </a>
+</div>
+
+      <p>&copy; 2024 Canuite Vijay. All rights reserved.</p>
+    </footer>
+  </body>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #ADFF2F;
+  padding: 0;
+}
+
+header {
+  background-color: #FF69B4;
+  color: #0000CD;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #FFFFE0;
+}
+#about1 {
+  text-align: center;
+  padding: 1px 0;
+}
+#about {
+  text-align: center;
+  padding: 20px 0;
+}
+
+#about img {
+  width: 90px;
+  border-radius: 30%;
+}
+
+#skills {
+  text-align: left;
+  padding: 10px 0;
+}
+
+#skills ul {
+  list-style: none;
+}
+
+#projects {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.project {
+  margin-bottom: 20px;
+}
+
+.project img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.social-links img {
+    width: 50px; 
+    height: auto; 
+    margin: 5px; 
+}
+
+#resume,
+#contact {
+  text-align: center;
+  padding: 20px 0;
+}
+
+#resume a {
+  text-decoration: none;
+  color: #800000;
+  border: 1px solid #333;
+  padding: 10px 20px;
+  border-radius: 100px;
+}
+
+footer {
+  background-color: #00FA9A;
+  color: #FF4500;
+  text-align: center;
+  padding: 20px 0;
+}
+
+</style>
+</html> 
+
+ 
