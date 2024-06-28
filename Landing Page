@@ -1,72 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>CANUITE_BLOG</title>
-  </head>
-  <body>
-    <header>
-      <h1>Welcome to our webpage showcasing web design</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Page</a></li>
-          <li><a href="#">services</a></li>
-          <li><a href="#">About</a></li>
-	  <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>CANUITE_BLOG</title>
+</head>
+<body>
+  <header>
+    <h1>Welcome to our webpage showcasing web design</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Page</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <main>
     <section class="hero">
-      <h2>Here is our sample works for your view</h2>
-      <p></p>
+      <h2>Here are our sample works for you to view</h2> 
+      <p>Click below to see our works</p>
       <a href="#" class="cta-button">Get Started</a>
     </section>
+  </main>
 
-    <footer>
-      <p><b>
-        &copy; 2024 canuite_blog. All rights reserved.<br />
-        Owner- CANUITE VIJAY V <br />
-      </b></p>
-   <div class="social-links">
-    <a href="https://www.facebook.com/" target="_blank">
+  <footer>
+    <p>&copy; 2024 canuite_blog. All rights reserved.<br />Owner: CANUITE VIJAY V</p>
+    <div class="social-links">
+      <a href="https://www.facebook.com/" target="_blank">
         <img src="f.png" alt="Facebook Logo">
-    </a>
-    <a href="https://in.linkedin.com/" target="_blank">
+      </a>
+      <a href="https://in.linkedin.com/" target="_blank">
         <img src="l.png" alt="LinkedIn Logo">
-    </a>
-    <a href="https://www.blogger.com/" target="_blank">
+      </a>
+      <a href="https://www.blogger.com/" target="_blank">
         <img src="b.jpeg" alt="Blog Logo">
-    </a>
-</div>
- 
-    </footer>
-  </body>
+      </a>
+    </div>
+  </footer>
+</body>
 <style>
-
-body,
-h1,
-h2,
-p,
-ul,
-li {
+body, h1, h2, p, ul, li {
   margin: 0;
   padding: 0;
+  box-sizing: border-box; /* Ensure box model consistency */
 }
 
 body {
   font-family: Arial, sans-serif;
 }
 
-/* Header styles */
 header {
   background-color: #FFDAB9;
   color: #DC143C;
-  padding: 60px;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -84,9 +76,13 @@ nav li {
 nav a {
   text-decoration: none;
   color: #4B0082;
+  transition: color 0.3s ease;
 }
 
-/* Hero section styles */
+nav a:hover {
+  color: #8A2BE2; /* Example of a hover effect */
+}
+
 .hero {
   background-image: url("1.jpeg");
   background-size: cover;
@@ -104,12 +100,16 @@ nav a {
   font-size: 18px;
   margin-bottom: 30px;
 }
-.social-links img {
-    width: 50px; /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
-    margin: 5px; /* Add margin around each image */
+
+.social-links {
+  margin-top: 20px;
 }
 
+.social-links img {
+  width: 50px;
+  height: auto;
+  margin: 5px;
+}
 
 .cta-button {
   display: inline-block;
@@ -119,14 +119,19 @@ nav a {
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Footer styles */
+.cta-button:hover {
+  background-color: #FFA500;
+  color: #FFD700;
+}
+
 footer {
   background-color: #FFA500;
   color: #FF4500;
   text-align: center;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 </style>
