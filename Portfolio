@@ -1,164 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>canuite_portfolio</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Canuite Vijay - Portfolio</title>
+  <style> 
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0; /* Light grey background */
+    }
+
+    header {
+      background-color: #4b0082; /* Indigo header background */
+      color: #fff; /* White text */
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em; /* Larger font size for the name */
+    }
+
+    header p {
+      margin: 5px 0 0; /* Adjust spacing */
+      font-size: 1.2em;
+    }
+
+    nav {
+      background-color: #6a5acd; /* Slate blue navigation background */
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav li {
+      margin: 0 15px; /* Increased margin between navigation items */
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff; /* White navigation text */
+      font-size: 1.1em;
+      transition: color 0.3s ease; /* Smooth color transition */
+    }
+
+    nav a:hover {
+      color: #ffb6c1; /* Light pink on hover */
+    }
+
+    section {
+      padding: 40px 20px; /* Increased padding for sections */
+      text-align: center;
+    }
+
+    section h2 {
+      color: #4b0082; /* Indigo section headings */
+      margin-bottom: 20px;
+    }
+
+    .project {
+      margin-bottom: 40px; /* Increased margin between projects */
+    }
+
+    .project img {
+      max-width: 100%;
+      border-radius: 10px; /* Slightly rounded corners for project images */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    }
+
+    .social-links {
+      margin-top: 20px;
+    }
+
+    .social-links a {
+      margin: 0 10px; /* Increased margin between social icons */
+    }
+
+    .social-links img {
+      width: 40px; /* Slightly smaller social icons */
+      height: auto;
+    }
+
+    footer {
+      background-color: #4b0082; /* Indigo footer background */
+      color: #fff; /* White footer text */
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    footer p {
+      margin: 10px 0 0;
+    }
+
+    footer a {
+      color: #ffb6c1; /* Light pink footer link */
+      text-decoration: none;
+      transition: color 0.3s ease; /* Smooth color transition */
+    }
+
+    footer a:hover {
+      color: #fff; /* White on hover */
+    }
+  </style>
+</head>
+<body>
   <header>
-      <h1>CANUITE VIJAY</h1>
-<p>Web Developer | Content Creator</p>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Page</a></li>
-          <li><a href="#">services</a></li>
-          <li><a href="#">About</a></li>
-	  <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-   <section id="about">
-      <img src="3.jpg" alt="canuite vijay" />
-    </section>
-
-    <section id="about1">
-      <h2>Crafting innovative web solutions with expertise in front-end design, back-end development, and seamless user experiences.
-      </h2>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project">
-        <img src="s.png" alt="Project 1" />
-        <h3>Project 1</h3>
-        <p>Explore a dynamic website I've crafted, showcasing innovative design and seamless functionality tailored to enhance user experience across various platforms</p>
-      </div>
-    </section>
-    <section id="resume">
-      <h2>Resume</h2>
-      <p><a href="canuite_resume.pdf" download> Download Resume (PDF)</a></p>
-    </section>
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: canuitevijay1212@gmail.com</p>
-      <p>Website: canuite_blog.com</p>
-      <p>Phone: 8753483224</p>
-    </section>
-    <footer>
-<div class="social-links">
-    <a href="https://www.facebook.com/" target="_blank">
-        <img src="f.png" alt="Facebook Logo">
-    </a>
-    <a href="https://in.linkedin.com/" target="_blank">
-        <img src="l.png" alt="LinkedIn Logo">
-    </a>
-    <a href="https://www.blogger.com/" target="_blank">
-        <img src="b.jpeg" alt="Blog Logo">
-    </a>
-</div>
-
-      <p>&copy; 2024 Canuite Vijay. All rights reserved.</p>
-    </footer>
-  </body>
-<style>
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background-color: #ADFF2F;
-  padding: 0;
-}
-
-header {
-  background-color: #FF69B4;
-  color: #0000CD;
-  text-align: center;
-  padding: 20px 0;
-}
-
-header h1 {
-  margin: 0;
-}
-nav ul {
-  list-style: none;
-  display: flex;
-}
-nav li {
-  margin-right: 20px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #FFFFE0;
-}
-#about1 {
-  text-align: center;
-  padding: 1px 0;
-}
-#about {
-  text-align: center;
-  padding: 20px 0;
-}
-
-#about img {
-  width: 90px;
-  border-radius: 30%;
-}
-
-#skills {
-  text-align: left;
-  padding: 10px 0;
-}
-
-#skills ul {
-  list-style: none;
-}
-
-#projects {
-  text-align: center;
-  padding: 20px 0;
-}
-
-.project {
-  margin-bottom: 20px;
-}
-
-.project img {
-  max-width: 100%;
-  border-radius: 5px;
-}
-
-.social-links img {
-    width: 50px; 
-    height: auto; 
-    margin: 5px; 
-}
-
-#resume,
-#contact {
-  text-align: center;
-  padding: 20px 0;
-}
-
-#resume a {
-  text-decoration: none;
-  color: #800000;
-  border: 1px solid #333;
-  padding: 10px 20px;
-  border-radius: 100px;
-}
-
-footer {
-  background-color: #00FA9A;
-  color: #FF4500;
-  text-align: center;
-  padding: 20px 0;
-}
-
-</style>
-</html> 
-
- 
+    <h1>Canuite Vijay</h1>
+    <p>Web Developer | Content Creator</p>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <section id="about">
+    <img src="3.jpg" alt="Canuite Vijay" />
+    <h2>About Me</h2>
+    <p>Crafting innovative web solutions with expertise in front-end design, back-end development, and seamless user experiences.</p>
+  </section>
+  
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <img src="s.png" alt="Project 1" />
+      <h3>Project 1</h3>
+      <p>Explore a dynamic website I've crafted, showcasing innovative design and seamless functionality tailored to enhance user experience across various platforms.</p>
+    </div>
+  </section>
+  
+  <section id="resume">
+    <h2>Resume</h2>
+    <p><a href="canuite_resume.pdf" download>Download Resume (PDF)</a></p>
+  </section>
+  
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: canuitevijay1212@gmail.com</p>
+    <p>Website: <a href="https://canuite_blog.com">canuite_blog.com</a></p>
+    <p>Phone: 8753483224</p>
+  </section>
+  
+  <footer>
+    <div class="social-links">
+      <a href="https://www.facebook.com/" target="_blank"><img src="f.png" alt="Facebook Logo"></a>
+      <a href="https://in.linkedin.com/" target="_blank"><img src="l.png" alt="LinkedIn Logo"></a>
+      <a href="https://www.blogger.com/" target="_blank"><img src="b.jpeg" alt="Blog Logo"></a>
+    </div>
+    <p>&copy; 2024 Canuite Vijay. All rights reserved.</p>
+  </footer>
+</body>
+</html>
