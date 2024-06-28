@@ -1,257 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Calculator</title>
-  </head>
-  <body>
-    <div class="calculator">
-      <div class="head" id="head">Canuite calculator</div>
-      <div class="display" id="display">0</div>
-      <button class="btn" id="clear">C</button>
-      <button class="btn" id="backspace">←</button>
-      <button class="btn" id="divide">/</button>
-      <button class="btn" id="multiply">*</button>
-      <button class="btn" id="7">7</button>
-      <button class="btn" id="8">8</button>
-      <button class="btn" id="9">9</button>
-      <button class="btn" id="subtract">-</button>
-      <button class="btn" id="6">6</button>
-      <button class="btn" id="5">5</button>
-      <button class="btn" id="4">4</button>
-      <button class="btn" id="decimal">.</button>
-      <button class="btn" id="1">1</button>
-      <button class="btn" id="2">2</button>
-      <button class="btn" id="3">3</button>
-      <button class="btn" id="add">+</button>
-      <button class="btn" id="0">0</button>
-      <button class="btn" id="equals">=</button>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Calculator application">
+  <link rel="stylesheet" href="styles.css">
+  <title>Calculator</title>
+  <style>
+    body,
+    h1,
+    h2,
+    p,
+    ul,
+    li {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #00FA9A;
+      font-family: Arial, sans-serif;
+    }
+    footer {
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: auto;
+      width: auto;
+      background-color: #FFA500;
+      color: #FF4500;
+      text-align: center;
+      padding: 10px 0;
+    }
+    .social-links img {
+      width: 50px; 
+      height: auto; 
+      margin: 5px; 
+    }
+    .calculator {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 10px;
+      max-width: 300px;
+      padding: 20px;
+      background-color: #191970;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    .display {
+      grid-column: 1 / -1;
+      text-align: right;
+      padding: 10px;
+      font-size: 24px;
+      background-color: #778899;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+    .display2 {
+      grid-column: 1 / -1;
+      text-align: left;
+      padding: 5px;
+      font-size: 15px;
+      background-color: #FFE4B5;
+      color: #C71585;
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+    .head {
+      text-align: center;
+      font-family: "Times New Roman", Times, serif;
+      background-color: #F5FFFA;
+      color: #FF0000;
+    }
+    .btn {
+      padding: 10px;
+      font-size: 20px;
+      text-align: center;
+      background-color: #B0C4DE;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.10s;
+    }
+    .btn:hover {
+      background-color: #F5FFFA;
+    }
+  </style>
+</head>
+<body>
+  <main class="calculator">
+    <div class="head">Canuite Calculator</div>
+    <div class="display" id="display">0</div>
+    <button class="btn" id="clear">C</button>
+    <button class="btn" id="backspace">←</button>
+    <button class="btn operator" id="divide">/</button>
+    <button class="btn operator" id="multiply">*</button>
+    <button class="btn" id="7">7</button>
+    <button class="btn" id="8">8</button>
+    <button class="btn" id="9">9</button>
+    <button class="btn operator" id="subtract">-</button>
+    <button class="btn" id="6">6</button>
+    <button class="btn" id="5">5</button>
+    <button class="btn" id="4">4</button>
+    <button class="btn" id="decimal">.</button>
+    <button class="btn" id="1">1</button>
+    <button class="btn" id="2">2</button>
+    <button class="btn" id="3">3</button>
+    <button class="btn operator" id="add">+</button>
+    <button class="btn" id="0">0</button>
+    <button class="btn" id="equals">=</button>
+    <div class="display2">Canuite Calculator</div>
+  </main>
 
-      <div class="display2" id="display2">
-        canuite calculator
-      </div>
+  <footer>
+    <p><b>&copy; 2024 canuite_blog. All rights reserved.<br>Owner - CANUITE VIJAY V</b></p>
+    <div class="social-links">
+      <a href="https://www.facebook.com/" target="_blank"><img src="f.png" alt="Facebook Logo"></a>
+      <a href="https://in.linkedin.com/" target="_blank"><img src="l.png" alt="LinkedIn Logo"></a>
+      <a href="https://www.blogger.com/" target="_blank"><img src="b.jpeg" alt="Blog Logo"></a>
     </div>
-    <script src="script.js"></script>
-<footer>
-      <p><b>
-        &copy; 2024 canuite_blog. All rights reserved.<br />
-        Owner- CANUITE VIJAY V <br />
-      </b></p>
-   <div class="social-links">
-    <a href="https://www.facebook.com/" target="_blank">
-        <img src="f.png" alt="Facebook Logo">
-    </a>
-    <a href="https://in.linkedin.com/" target="_blank">
-        <img src="l.png" alt="LinkedIn Logo">
-    </a>
-    <a href="https://www.blogger.com/" target="_blank">
-        <img src="b.jpeg" alt="Blog Logo">
-    </a>
-</div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const display = document.getElementById("display");
+      let currentInput = "0";
+      let currentOperator = "";
+      let prevInput = "";
+
+      function updateDisplay() {
+        display.textContent = currentInput;
+      }
+
+      function handleDigitClick(digit) {
+        if (
+          currentInput === "0" ||
+          currentInput === "Infinity" ||
+          currentInput === "-Infinity"
+        ) {
+          currentInput = digit;
+        } else {
+          currentInput += digit;
+        }
+        updateDisplay();
+      }
+
+      function handleOperatorClick(operator) {
+        prevInput = currentInput;
+        currentInput = "0";
+        currentOperator = operator;
+      }
+
+      function handleEqualsClick() {
+        const prev = parseFloat(prevInput);
+        const current = parseFloat(currentInput);
+
+        switch (currentOperator) {
+          case "+":
+            currentInput = prev + current;
+            break;
+          case "-":
+            currentInput = prev - current;
+            break;
+          case "*":
+            currentInput = prev * current;
+            break;
+          case "/":
+            if (current === 0) {
+              currentInput = "Error";
+            } else {
+              currentInput = prev / current;
+            }
+            break;
+        }
+
+        currentOperator = "";
+        prevInput = "";
+        updateDisplay();
+      }
+
+      function clear() {
+        currentInput = "0";
+        currentOperator = "";
+        prevInput = "";
+        updateDisplay();
+      }
  
-    </footer>
+      for (let i = 0; i <= 9; i++) {
+        document.getElementById(i.toString()).addEventListener("click", () => {
+          handleDigitClick(i.toString());
+        });
+      } 
 
-  </body>
-<style>
-body,
-h1,
-h2,
-p,
-ul,
-li {
-  margin: 0;
-  padding: 100;
-}
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  background-color: #00FA9A;
-  font-family: Arial, sans-serif;
-}
-footer {
-  padding: 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: auto;
-  width: auto;
-  background-color: #FFA500;
-  color: #FF4500;
-  text-align: center;
-  padding: 10px 0;
-}
-.social-links img {
-    width: 50px; /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
-    margin: 5px; /* Add margin around each image */
-}
-.calculator {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
-  max-width: 300px;
-  padding: 20px;
-  background-color: #191970;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.display {
-  grid-column: 1 / -1;
-  text-align: right;
-  padding: 10px;
-  font-size: 24px;
-  background-color: #778899;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-}
-
-.display2 {
-  grid-column: 1 / -1;
-  text-align: left;
-  padding: 5px;
-  font-size: 15px;
-  background-color: #FFE4B5;
-  color: #C71585;
-  border: 1px solid black;
-  border-radius: 5px;
-}
-
-.head{
-text-align: center;
-font-family: "Times New Roman", Times, serif;
-background-color: #F5FFFA;
-  color: #FF0000;
-}
-
-.btn {
-  padding: 10px;
-  font-size: 20px;
-  text-align: center;
-  background-color: #B0C4DE;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.10s;
-}
-
-.btn:hover {
-  background-color: #F5FFFA;
-}
-
-.about {
-  text-align: center;
-}
-</style>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const display = document.getElementById("display");
-  let currentInput = "0";
-  let currentOperator = "";
-  let prevInput = "";
-
-  function updateDisplay() {
-    display.textContent = currentInput;
-  }
-
-  function handleDigitClick(digit) {
-    if (
-      currentInput === "0" ||
-      currentInput === "Infinity" ||
-      currentInput === "-Infinity"
-    ) {
-      currentInput = digit;
-    } else {
-      currentInput += digit;
-    }
-    updateDisplay();
-  }
-
-  function handleOperatorClick(operator) {
-    prevInput = currentInput;
-    currentInput = "0";
-    currentOperator = operator;
-  }
-
-  function handleEqualsClick() {
-    const prev = parseFloat(prevInput);
-    const current = parseFloat(currentInput);
-
-    switch (currentOperator) {
-      case "+":
-        currentInput = prev + current;
-        break;
-      case "-":
-        currentInput = prev - current;
-        break;
-      case "*":
-        currentInput = prev * current;
-        break;
-      case "/":
-        currentInput = prev / current;
-        break;
-    }
-
-    currentOperator = "";
-    prevInput = "";
-    updateDisplay();
-  }
-
-  function clear() {
-    currentInput = "0";
-    currentOperator = "";
-    prevInput = "";
-    updateDisplay();
-  }
-
-  // Add event listeners to digit buttons
-  for (let i = 0; i <= 9; i++) {
-    document.getElementById(i.toString()).addEventListener("click", () => {
-      handleDigitClick(i.toString());
-    });
-  }
-
-  document
-    .getElementById("add")
-    .addEventListener("click", () => handleOperatorClick("+"));
-  document
-    .getElementById("subtract")
-    .addEventListener("click", () => handleOperatorClick("-"));
-  document
-    .getElementById("multiply")
-    .addEventListener("click", () => handleOperatorClick("*"));
-  document
-    .getElementById("divide")
-    .addEventListener("click", () => handleOperatorClick("/"));
-
-  document.getElementById("decimal").addEventListener("click", () => {
-    if (!currentInput.includes(".")) {
-      currentInput += ".";
+      document.getElementById("add").addEventListener("click", () => handleOperatorClick("+"));
+      document.getElementById("subtract").addEventListener("click", () => handleOperatorClick("-"));
+      document.getElementById("multiply").addEventListener("click", () => handleOperatorClick("*"));
+      document.getElementById("divide").addEventListener("click", () => handleOperatorClick("/"));
+ 
+      document.getElementById("decimal").addEventListener("click", () => {
+        if (!currentInput.includes(".")) {
+          currentInput += ".";
+          updateDisplay();
+        }
+      });
+ 
+      document.getElementById("equals").addEventListener("click", handleEqualsClick);
+ 
+      document.getElementById("clear").addEventListener("click", clear);
+ 
+      document.getElementById("backspace").addEventListener("click", () => {
+        currentInput = currentInput.slice(0, -1);
+        if (currentInput === "") {
+          currentInput = "0";
+        }
+        updateDisplay();
+      });
+ 
       updateDisplay();
-    }
-  });
-
-  document
-    .getElementById("equals")
-    .addEventListener("click", handleEqualsClick);
-  document.getElementById("clear").addEventListener("click", clear);
-
-  document.getElementById("backspace").addEventListener("click", () => {
-    currentInput = currentInput.slice(0, -1);
-    if (currentInput === "") {
-      currentInput = "0";
-    }
-    updateDisplay();
-  });
-
-  updateDisplay();
-});
-
-</script>
-</html> 
-
+    });
+  </script>
+</body>
+</html>
